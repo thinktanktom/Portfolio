@@ -4,7 +4,7 @@
 
 Professional portfolio showcasing blockchain development expertise and client testimonials.
 
-**Live Site:** https://thinktanktom.github.io
+**Live Site:** https://thinktanktom.github.io/Portfolio
 
 ### Technologies
 - HTML5, CSS3, JavaScript
