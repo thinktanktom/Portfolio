@@ -62,6 +62,18 @@
             animation: fadeInUp 1s ease-out 0.2s both;
         }
 
+        .top-rated-badge {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out 0.1s both;
+        }
+
         .cta-button {
             display: inline-block;
             background: rgba(255, 255, 255, 0.2);
@@ -369,6 +381,133 @@
             text-decoration: underline;
         }
 
+        /* Blog Section */
+        .blog {
+            background: white;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+
+        .blog-content {
+            padding: 25px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 0.85rem;
+            color: #718096;
+        }
+
+        .blog-date, .blog-read-time {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .blog-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .blog-excerpt {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        .blog-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .blog-tag {
+            background: #edf2f7;
+            color: #667eea;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .blog-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .blog-link:hover {
+            text-decoration: underline;
+        }
+
+        .blog-cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .view-all-btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            border: 2px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .view-all-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
         /* Reviews Section */
         .reviews {
             background: #f7fafc;
@@ -558,6 +697,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -567,10 +707,11 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
+            <div class="top-rated-badge">⭐ 100% Job Success • Top Rated Plus</div>
             <h1>Thomas Cyriac</h1>
             <p class="subtitle">Blockchain Developer & AI Engineer</p>
             <p style="margin-bottom: 2rem; opacity: 0.9; animation: fadeInUp 1s ease-out 0.3s both;">
-                4+ years of experience building cutting-edge blockchain solutions, DeFi protocols, and AI applications
+                4+ years of experience • $100K+ earned • 15+ completed projects • $45/hr
             </p>
             <a href="#contact" class="cta-button">Let's Work Together</a>
         </div>
@@ -583,25 +724,28 @@
             <div class="about-image">TC</div>
             <div class="about-text">
                 <p>
-                    I'm a passionate blockchain developer and AI engineer with over 4 years of experience creating innovative solutions in the crypto space. I specialize in building robust smart contracts, DeFi protocols, NFT marketplaces, and AI-powered applications.
+                    I'm a passionate blockchain developer and AI engineer with over 4 years of experience working with Blockchain, Artificial Intelligence and DevOps related technology. I have a degree in Computer Science from SRM Institute and have prior experience dealing with research level mathematics.
                 </p>
                 <p>
-                    My journey started with a Bachelor's in Computer Science from SRM Institute, and I've since worked with clients worldwide through platforms like Upwork, building everything from stablecoins to algorithmic trading systems. I love the challenge each new project brings and the opportunity to push the boundaries of what's possible.
+                    Based in Coimbatore, Tamil Nadu, India but available for projects worldwide, I specialize in building robust smart contracts, DeFi protocols, NFT marketplaces, and AI-powered applications. My expertise spans across Solidity, Rust, Python, and various blockchain ecosystems including Ethereum and Stellar.
+                </p>
+                <p>
+                    I love working with new clients as each client is an opportunity to impress and deliver exceptional results. Feel free to check out my GitHub for more of my work!
                 </p>
             </div>
         </div>
         <div class="stats fade-in">
             <div class="stat">
-                <div class="stat-number">4+</div>
-                <div class="stat-label">Years Experience</div>
+                <div class="stat-number">$100K+</div>
+                <div class="stat-label">Total Earnings</div>
             </div>
             <div class="stat">
                 <div class="stat-number">15+</div>
-                <div class="stat-label">Projects Completed</div>
+                <div class="stat-label">Completed Projects</div>
             </div>
             <div class="stat">
                 <div class="stat-number">100%</div>
-                <div class="stat-label">Client Satisfaction</div>
+                <div class="stat-label">Job Success Score</div>
             </div>
         </div>
     </section>
@@ -615,10 +759,13 @@
                 <h3>Blockchain Development</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">Solidity</span>
-                    <span class="skill-tag">Web3.js</span>
                     <span class="skill-tag">Ethereum</span>
-                    <span class="skill-tag">BSC</span>
-                    <span class="skill-tag">Smart Contracts</span>
+                    <span class="skill-tag">Rust</span>
+                    <span class="skill-tag">API</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Cryptocurrency</span>
+                    <span class="skill-tag">DApps</span>
+                    <span class="skill-tag">Docker</span>
                 </div>
             </div>
             <div class="skill-category">
@@ -653,7 +800,6 @@
                     <span class="skill-tag">Docker</span>
                     <span class="skill-tag">Kubernetes</span>
                     <span class="skill-tag">AWS</span>
-                    <span class="skill-tag">Nix</span>
                 </div>
             </div>
         </div>
@@ -663,15 +809,16 @@
     <section id="projects" class="section">
         <h2 class="section-title fade-in">Featured Projects</h2>
         <div class="projects-grid fade-in">
+        <div class="projects-grid fade-in">
             <div class="project-card">
                 <div class="project-header">
-                    <div class="project-title">RFI Fork with Enhanced Features</div>
+                    <div class="project-title">RFI Fork with Enhanced Tokenomics</div>
                     <div class="project-type">DeFi Token</div>
                 </div>
                 <div class="project-content">
                     <p class="project-description">
-                        Forked RFI and introduced additional transaction taxes including green tax and marketing tax. 
-                        Required deep understanding of reflection mechanisms for token holder rewards.
+                        Forked Reflect Finance (RFI) and introduced additional transaction taxes including green tax and marketing tax. 
+                        Required deep understanding of reflection mechanisms for automatic token holder rewards.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Solidity</span>
@@ -679,7 +826,7 @@
                         <span class="tech-tag">DeFi</span>
                         <span class="tech-tag">Tokenomics</span>
                     </div>
-                    <a href="https://github.com/CodeSaint98" class="project-link">View on GitHub →</a>
+                    <a href="https://github.com/thinktanktom" class="project-link">View on GitHub →</a>
                 </div>
             </div>
 
@@ -699,7 +846,7 @@
                         <span class="tech-tag">Yield Farming</span>
                         <span class="tech-tag">BNB</span>
                     </div>
-                    <a href="https://github.com/CodeSaint98" class="project-link">View Details →</a>
+                    <a href="https://github.com/thinktanktom" class="project-link">View Details →</a>
                 </div>
             </div>
 
@@ -719,7 +866,7 @@
                         <span class="tech-tag">Research</span>
                         <span class="tech-tag">NCIEM</span>
                     </div>
-                    <a href="https://github.com/CodeSaint98" class="project-link">Read Paper →</a>
+                    <a href="https://github.com/thinktanktom" class="project-link">Read Paper →</a>
                 </div>
             </div>
 
@@ -739,7 +886,7 @@
                         <span class="tech-tag">Computer Vision</span>
                         <span class="tech-tag">Research</span>
                     </div>
-                    <a href="https://github.com/CodeSaint98/automatic-watermark-detection" class="project-link">View Project →</a>
+                    <a href="https://github.com/thinktanktom/automatic-watermark-detection" class="project-link">View Project →</a>
                 </div>
             </div>
 
@@ -759,7 +906,7 @@
                         <span class="tech-tag">BEP20</span>
                         <span class="tech-tag">API</span>
                     </div>
-                    <a href="https://github.com/CodeSaint98" class="project-link">Learn More →</a>
+                    <a href="https://github.com/thinktanktom" class="project-link">Learn More →</a>
                 </div>
             </div>
 
@@ -785,9 +932,82 @@
         </div>
     </section>
 
+    <!-- Blog Section -->
+    <section id="blog" class="section blog">
+        <h2 class="section-title fade-in">Latest Articles</h2>
+        <div class="blog-grid fade-in">
+            <div class="blog-card">
+                <div class="blog-image">🔗</div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-date">📅 Nov 20, 2024</span>
+                        <span class="blog-read-time">⏱️ 18 min read</span>
+                    </div>
+                    <h3 class="blog-title">Building a Decentralized Freelancing Platform with Chainlink Automation</h3>
+                    <p class="blog-excerpt">
+                        Complete guide to building a blockchain-based freelancing platform using Solidity smart contracts, Chainlink Automation, and tokenomics. Learn escrow systems, dispute resolution, and automated payments.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">Chainlink</span>
+                        <span class="blog-tag">Smart Contracts</span>
+                        <span class="blog-tag">DeFi</span>
+                    </div>
+                    <a href="blog/guild_protocol.html" class="blog-link">Read More →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-image">🎲</div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-date">📅 Nov 18, 2024</span>
+                        <span class="blog-read-time">⏱️ 15 min read</span>
+                    </div>
+                    <h3 class="blog-title">Building Provably Fair NFT Systems with Onchain Randomization</h3>
+                    <p class="blog-excerpt">
+                        Deep dive into implementing cryptographically secure onchain randomization for NFT projects. Explore the Hashmasks algorithm and security considerations for provably fair systems.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">NFT</span>
+                        <span class="blog-tag">Cryptography</span>
+                        <span class="blog-tag">Security</span>
+                    </div>
+                    <a href="blog/onchain_randomization.html" class="blog-link">Read More →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-image">🔧</div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-date">📅 Nov 15, 2024</span>
+                        <span class="blog-read-time">⏱️ 15 min read</span>
+                    </div>
+                    <h3 class="blog-title">How to Flash OpenWRT on MikroTik Routers Using Initramfs</h3>
+                    <p class="blog-excerpt">
+                        Step-by-step guide to flash OpenWRT on MikroTik RouterBoard using initramfs method. Complete tutorial with TFTP server setup, troubleshooting, and network infrastructure best practices.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">OpenWRT</span>
+                        <span class="blog-tag">Networking</span>
+                        <span class="blog-tag">DevOps</span>
+                    </div>
+                    <a href="blog/openwrt_mikrotik.html" class="blog-link">Read More →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-cta fade-in">
+            <a href="blog.html" class="view-all-btn">View All Articles</a>
+        </div>
+    </section>
+
     <!-- Reviews Section -->
     <section id="reviews" class="section reviews">
         <h2 class="section-title fade-in">Client Reviews</h2>
+        <p style="text-align: center; color: #718096; margin-bottom: 40px; font-style: italic;">
+            <strong>Note:</strong> All reviews below are authentic testimonials from my Upwork profile. Client names have been changed to protect privacy.
+        </p>
         <div class="reviews-grid fade-in">
             <div class="review-card">
                 <p class="review-text">
@@ -810,7 +1030,7 @@
         <h2 class="section-title fade-in">Let's Work Together</h2>
         <div class="contact-content fade-in">
             <p style="font-size: 1.2rem; color: #4a5568; margin-bottom: 40px;">
-                Ready to bring your blockchain vision to life? I'm available for freelance projects and full-time opportunities worldwide.
+                Ready to bring your blockchain vision to life? I'm available for freelance projects worldwide. Currently based in Coimbatore, Tamil Nadu, India with 100% Job Success rate on Upwork.
             </p>
             
             <div class="contact-info">
@@ -829,8 +1049,8 @@
                 <div class="contact-item">
                     <div class="contact-icon">📍</div>
                     <h3>Location</h3>
-                    <p>Currently in India</p>
-                    <p>Willing to relocate anywhere</p>
+                    <p>Coimbatore, Tamil Nadu, India</p>
+                    <p>Available: More than 30 hrs/week</p>
                 </div>
             </div>
 
@@ -973,7 +1193,7 @@
                     </div>
                 </div>
             </div>
-            <p> Although the reviews are authentic all names have been changed to protect privacy.</p>
+
             <div class="review-card">
                 <p class="review-text">
                     Working with Thomas was a game-changer for our NFT marketplace. He not only built the smart contracts but also provided valuable insights on gas optimization and security best practices. Highly recommend!
@@ -1039,4 +1259,4 @@
                     <div class="author-info">
                         <h4>Anna Wilson</h4>
                         <p>Crypto Investment Fund</p>
-                        <div class="stars">★★★★★
+                        <div class="stars">★★
