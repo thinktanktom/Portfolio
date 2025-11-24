@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Thomas Cyriac | Blockchain Developer</title>
+    <meta name="description" content="Technical articles on blockchain development, smart contracts, DeFi, and AI by Thomas Cyriac">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 15px 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        /* Hero Section */
+        .blog-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 150px 20px 80px;
+            text-align: center;
+            color: white;
+        }
+
+        .blog-hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .blog-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Blog Grid */
+        .blog-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+
+        .blog-content {
+            padding: 25px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 0.85rem;
+            color: #718096;
+        }
+
+        .blog-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .blog-excerpt {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        .blog-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .blog-tag {
+            background: #edf2f7;
+            color: #667eea;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .blog-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .blog-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">TC</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#reviews">Reviews</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="blog-hero">
+        <h1>Technical Blog</h1>
+        <p>Deep dives into blockchain development, smart contracts, network infrastructure, and software engineering</p>
+    </section>
+
+    <!-- Blog Grid -->
+    <div class="blog-container">
+        <div class="blog-grid">
+            <!-- Blog Post 1 -->
+            <div class="blog-card">
+                <div class="blog-image">🔗</div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>📅 Nov 20, 2024</span>
+                        <span>⏱️ 18 min read</span>
+                    </div>
+                    <h3 class="blog-title">Building a Decentralized Freelancing Platform with Chainlink Automation</h3>
+                    <p class="blog-excerpt">
+                        Complete guide to building a blockchain-based freelancing platform using Solidity smart contracts, Chainlink Automation, and tokenomics. Learn how to create escrow systems, dispute resolution, and automated payments for Guild Protocol.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">Chainlink</span>
+                        <span class="blog-tag">Smart Contracts</span>
+                        <span class="blog-tag">DeFi</span>
+                        <span class="blog-tag">Solidity</span>
+                    </div>
+                    <a href="blog/guild_protocol.html" class="blog-link">Read More →</a>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-card">
+                <div class="blog-image">🎲</div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>📅 Nov 18, 2024</span>
+                        <span>⏱️ 15 min read</span>
+                    </div>
+                    <h3 class="blog-title">Building Provably Fair NFT Systems with Onchain Randomization</h3>
+                    <p class="blog-excerpt">
+                        Deep dive into implementing cryptographically secure onchain randomization for NFT projects. Explore the Hashmasks algorithm, security considerations, and how to build provably fair blockchain systems that users can trust.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">NFT</span>
+                        <span class="blog-tag">Cryptography</span>
+                        <span class="blog-tag">Security</span>
+                        <span class="blog-tag">Randomness</span>
+                    </div>
+                    <a href="blog/onchain_randomization.html" class="blog-link">Read More →</a>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="blog-card">
+                <div class="blog-image">🔧</div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>📅 Nov 15, 2024</span>
+                        <span>⏱️ 15 min read</span>
+                    </div>
+                    <h3 class="blog-title">How to Flash OpenWRT on MikroTik Routers Using Initramfs</h3>
+                    <p class="blog-excerpt">
+                        Step-by-step guide to flash OpenWRT on MikroTik RouterBoard using initramfs method. Complete tutorial with TFTP server setup, Vagrant configuration, troubleshooting, and network infrastructure best practices.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">OpenWRT</span>
+                        <span class="blog-tag">Networking</span>
+                        <span class="blog-tag">DevOps</span>
+                        <span class="blog-tag">Linux</span>
+                    </div>
+                    <a href="blog/openwrt_mikrotik.html" class="blog-link">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Thomas Cyriac. All rights reserved.</p>
+        <div style="margin-top: 15px;">
+            <a href="https://github.com/thinktanktom" target="_blank">GitHub</a>
+            <a href="https://www.upwork.com/freelancers/thinktanktom" target="_blank">Upwork</a>
+            <a href="https://www.linkedin.com/in/thomas-c-7a8ba3184" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
